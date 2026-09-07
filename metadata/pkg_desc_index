@@ -4106,7 +4106,7 @@ dev-db/timescaledb 2.26.4 2.27.2 2.28.3: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
 dev-db/tokyocabinet 1.4.48-r3: A library of routines for managing a database
 dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
-dev-db/valkey 9.1.0-r1: Persistent key-value store, fork of dev-db/redis
+dev-db/valkey 9.1.0-r1 9.1.2: Persistent key-value store, fork of dev-db/redis
 dev-db/vsqlite++ 0.3.13-r1: VSQLite++ - A well designed and portable SQLite3 Wrapper for C++
 dev-db/wxsqlite3 4.10.6-r1: C++ wrapper around the public domain SQLite 3.x database
 dev-db/zedis 0.4.1 0.4.2 0.5.2: Blazing-fast native Redis GUI built with Rust and GPUI

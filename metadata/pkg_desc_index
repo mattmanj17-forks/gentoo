@@ -16256,7 +16256,7 @@ sci-libs/gmsh 4.14.0 4.14.1: Three-dimensional finite element mesh generator
 sci-libs/gsl 2.7.1-r2 2.7.1-r3: The GNU Scientific Library
 sci-libs/gts 20121130: GNU Triangulated Surface Library
 sci-libs/hdf 4.2.15-r2: General purpose library and format for storing scientific data
-sci-libs/hdf5 1.14.6-r2: General purpose library and file format for storing scientific data
+sci-libs/hdf5 1.14.6-r2 2.2.0: General purpose library and file format for storing scientific data
 sci-libs/highfive 3.2.0 3.3.0: Header-only C++ interface for libhdf5
 sci-libs/hipBLAS 6.3.3 6.4.3-r1 7.0.2 7.1.0 7.2.0: ROCm BLAS marshalling library
 sci-libs/hipBLAS-common 6.3.2 6.3.3 6.4.1 6.4.3 7.0.2 7.1.0 7.2.0: Common files shared by hipBLAS and hipBLASLt

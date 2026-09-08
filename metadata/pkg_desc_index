@@ -3862,7 +3862,7 @@ dev-build/bazel-buildtools 8.5.1: Tools for working with Google's Bazel BUILD fi
 dev-build/bazelisk 1.29.0: A user-friendly launcher for Bazel written in Go
 dev-build/bmake 20251111 20260406 20260508: NetBSD's portable make
 dev-build/boost-m4 0.4_p20221019-r1 0.4_p20250404: Another set of autoconf macros for compiling against boost
-dev-build/cmake 4.1.4 4.1.5 4.2.4 4.3.4 9999: Cross platform Make
+dev-build/cmake 4.1.4 4.1.5 4.2.4 4.3.4 4.3.5 4.4.2 4.4.3 9999: Cross platform Make
 dev-build/corrosion 0.5.2 0.6.1-r1: Marrying Rust and CMake - Easy Rust and C/C++ Integration!
 dev-build/dagger 0.9.8: ci/cd as code that runs anywhere
 dev-build/dolphin-plugins-makefileactions 26.04.3 26.08.0: Dolphin plugin for Makefile targets integration
@@ -16664,7 +16664,7 @@ sec-keys/openpgp-keys-bleachbit 20250910: OpenPGP keys used by the BleachBit dev
 sec-keys/openpgp-keys-bobfriesenhahn 20220326: OpenPGP keys used by Bob Friesenhahn
 sec-keys/openpgp-keys-botan 20210416 20260703: OpenPGP keys used to sign Botan releases
 sec-keys/openpgp-keys-bradhouse 20240624 20260703: OpenPGP keys used by Brad House (bradh352)
-sec-keys/openpgp-keys-bradking 20230817 20240902 20250904: OpenPGP keys used by Brad King
+sec-keys/openpgp-keys-bradking 20230817 20240902 20250904 20260908: OpenPGP keys used by Brad King
 sec-keys/openpgp-keys-bzip2 20220406: OpenPGP key used to sign bzip2 releases
 sec-keys/openpgp-keys-canonical 20190401: OpenPGP keys used to sign LXD-related packages
 sec-keys/openpgp-keys-cathugger 20240123: OpenPGP keys used by cathugger

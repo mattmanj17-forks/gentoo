@@ -17859,7 +17859,7 @@ sys-fs/fatsort 1.7.1: Sorts files on FAT16/32 partitions, ideal for basic audio 
 sys-fs/fragview 0.1.1-r1 0.1.2 9999: Disk fragmentation visualizer based on FIEMAP and FIBMAP ioctls
 sys-fs/fscrypt 0.3.4 0.3.6: Tool for managing Linux filesystem encryption
 sys-fs/fswatch 1.18.0 1.18.3: cross-platform file change monitor with multiple backends
-sys-fs/fuse 2.9.9-r2 3.18.2: An interface for filesystems implemented in userspace
+sys-fs/fuse 2.9.9-r2 3.18.2 3.18.3: An interface for filesystems implemented in userspace
 sys-fs/fuse-common 3.10.4-r3: Common files for multiple slots of sys-fs/fuse
 sys-fs/fuse-convmvfs 0.2.6-r1: FUSE file system to convert filename charset
 sys-fs/fuse-exfat 1.4.0-r1: exFAT filesystem FUSE module

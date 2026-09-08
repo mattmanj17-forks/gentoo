@@ -12,6 +12,7 @@ HOMEPAGE="https://libcxx.llvm.org/"
 
 LICENSE="Apache-2.0-with-LLVM-exceptions || ( UoI-NCSA MIT )"
 SLOT="0"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~sparc ~x86 ~arm64-macos ~x64-macos"
 IUSE="+clang +libcxxabi +static-libs test"
 REQUIRED_USE="test? ( clang )"
 RESTRICT="!test? ( test )"
@@ -181,11 +182,6 @@ multilib_src_compile() {
 
 multilib_src_test() {
 	local -x LIT_PRESERVES_TMP=1
-	if use amd64 || use x86; then
-		# https://github.com/llvm/llvm-project/issues/212002
-		local -x LIT_XFAIL="libcxx/atomics/clear_padding.pass.cpp"
-	fi
-
 	cmake_build libcxx-test-suite-install-cxx
 	if [[ ${CHOST} != *-darwin* ]] ; then
 		local libdir=$(get_libdir)

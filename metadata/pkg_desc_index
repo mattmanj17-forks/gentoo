@@ -3147,7 +3147,7 @@ app-shells/ccsh 0.0.4-r5: UNIX Shell for people already familiar with the C lang
 app-shells/ctypes-sh 1.2_p20240626: Foreign function interface for bash
 app-shells/dash 0.5.12-r1 0.5.13.5 9999: Debian Almquist Shell
 app-shells/dsh 0.25.10-r2: Distributed Shell
-app-shells/fish 4.5.0-r2 4.6.0 4.7.1 4.8.1 9999: Friendly Interactive SHell
+app-shells/fish 4.5.0-r2 4.6.0 4.7.1 4.8.1 4.9.2 9999: Friendly Interactive SHell
 app-shells/fsh 1.0.0_p20220816-r2: F# Shell with integrated F# scripting
 app-shells/fzf 0.74.1 0.74.3: General-purpose command-line fuzzy finder, written in Golang
 app-shells/gash 0.3.0-r100: POSIX-compatible shell written in Guile Scheme
@@ -4106,7 +4106,7 @@ dev-db/timescaledb 2.26.4 2.27.2 2.28.3: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
 dev-db/tokyocabinet 1.4.48-r3: A library of routines for managing a database
 dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
-dev-db/valkey 9.1.0-r1 9.1.2: Persistent key-value store, fork of dev-db/redis
+dev-db/valkey 9.1.2: Persistent key-value store, fork of dev-db/redis
 dev-db/vsqlite++ 0.3.13-r1: VSQLite++ - A well designed and portable SQLite3 Wrapper for C++
 dev-db/wxsqlite3 4.10.6-r1: C++ wrapper around the public domain SQLite 3.x database
 dev-db/zedis 0.5.2 0.9.0: Blazing-fast native Redis GUI built with Rust and GPUI
@@ -14069,7 +14069,7 @@ media-sound/aumix 2.9.1-r1: Aumix volume/mixer control program
 media-sound/awesfx 0.5.2-r1: AWE32 Sound Driver Utility Programs
 media-sound/aylet 0.5: Aylet plays music files in the .ay format
 media-sound/baudline 1.08-r2: A time-frequency browser designed for visualization of spectral domains
-media-sound/beets 2.12.0 2.13.1 9999: Media library management system for obsessive music geeks
+media-sound/beets 2.12.0 2.13.1 2.14.0 9999: Media library management system for obsessive music geeks
 media-sound/bitmeter 1.2-r2: Diagnosis tool for JACK audio software
 media-sound/bluez-alsa 4.3.1-r2 9999: Bluetooth Audio ALSA Backend
 media-sound/bplay 0.991: No-frills command-line buffered player and recorder
@@ -14319,7 +14319,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122-r1: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.96: Spotify is a social music platform
-media-sound/strawberry 1.2.19 1.2.25 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.19 1.2.25 1.2.29 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -15547,7 +15547,7 @@ net-misc/throttle 1.2-r1 1.2-r3: Bandwidth limiting pipe
 net-misc/tiers 1.1: Random network topography generator
 net-misc/tigervnc 1.16.2 9999: Remote desktop viewer display system
 net-misc/tigervnc-xorg-module 1.16.2: Metapackage for the xorg module provided by tigervnc
-net-misc/tinyssh 20260401 20260601 99999999: A small SSH server with state-of-the-art cryptography
+net-misc/tinyssh 20260401 20260601 20260906 99999999: A small SSH server with state-of-the-art cryptography
 net-misc/tipcutils 3.0.6: Utilities for TIPC (Transparent Inter-Process Communication)
 net-misc/trurl 0.16.1 9999: Command line tool for URL parsing and manipulation
 net-misc/tuba 0.10.3 0.11.0 0.11.1: Browse the Fediverse (GTK client)

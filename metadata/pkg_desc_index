@@ -8608,7 +8608,7 @@ dev-python/extras 1.0.0-r2: Useful extra bits for Python that should be in the s
 dev-python/eyed3 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
 dev-python/ezgb 0.2.0: A standalone Python library for working with git-bug repositories
 dev-python/faker 40.36.0 40.37.0 40.38.0: A Python package that generates fake data for you
-dev-python/fakeredis 2.35.1 2.36.2 2.37.1: Fake implementation of redis API for testing purposes
+dev-python/fakeredis 2.35.1 2.36.2 2.37.1 2.38.0: Fake implementation of redis API for testing purposes
 dev-python/fastapi 0.140.7 0.140.13 0.141.1: High performance framework, easy to learn, fast to code, ready for production
 dev-python/fastbencode 0.3.10 0.3.11: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks

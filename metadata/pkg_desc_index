@@ -16088,7 +16088,7 @@ sci-electronics/espresso-ab 1.0-r3: POSIX compliant version of the espresso logi
 sci-electronics/fasthenry 3.0.20.07.17 3.0.24.03.14: Three dimensional inductance computation program, Whiteley Research version
 sci-electronics/geda 1.10.2-r102: GPL Electronic Design Automation (gEDA):gaf core package
 sci-electronics/geda-suite 20171223-r2 20171223-r3: Metapackage for all components for a full-featured gEDA/gaf system
-sci-electronics/gerbv 2.7.0: A RS-274X (Gerber) and NC drill (Excellon) file viewer
+sci-electronics/gerbv 2.7.0 2.13.0: A RS-274X (Gerber) and NC drill (Excellon) file viewer
 sci-electronics/ghdl 6.0.0: Open-source analyzer, compiler, and simulator for VHDL 2008/93/87
 sci-electronics/gnetman 0.0.1_pre20110124: A GNU Netlist Manipulation Library
 sci-electronics/gnucap 20210107: GNUCap is the GNU Circuit Analysis Package

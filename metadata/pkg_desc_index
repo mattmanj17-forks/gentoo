@@ -1242,7 +1242,7 @@ app-arch/wimlib 1.14.4-r1: The open source Windows Imaging (WIM) library
 app-arch/xar 1.8.0.0.498-r1: An easily extensible archive format
 app-arch/xarchiver 0.5.4.26 0.5.4.27: A GTK+ archive manager that can be used with Thunar
 app-arch/xdms 1.3.2-r2: xDMS - Amiga DMS disk image decompressor
-app-arch/xz-utils 5.8.3 9999: Utils for managing LZMA compressed files
+app-arch/xz-utils 5.8.3 5.8.4 9999: Utils for managing LZMA compressed files
 app-arch/zchunk 1.3.2 1.4.0 1.5.1 1.5.3 9999: File format designed for highly efficient deltas with good compression
 app-arch/zip 3.0-r7 3.0_p16: Info ZIP (encryption support)
 app-arch/zoo 2.10-r6: Manipulate archives of files in compressed form
@@ -15101,7 +15101,7 @@ net-libs/libomemo-c 0.5.1: XMPP fork of Signal Protocol C Library supporting XEP
 net-libs/liboping 1.10.0-r3: Protocol independent ANSI-C ping library and command line utility
 net-libs/libosmo-dsp 0.5.0-r1 9999: Library with SDR DSP primitives
 net-libs/libotr 4.1.1-r2: (OTR) Messaging allows you to have private conversations over instant messaging
-net-libs/libpcap 1.10.6 9999: A system-independent library for user-level network packet capture
+net-libs/libpcap 1.10.6 1.10.7 9999: A system-independent library for user-level network packet capture
 net-libs/libprotoident 2.0.14_p1 2.0.15_p1 9999: A library that performs application layer protocol identification for flows
 net-libs/libproxy 0.5.9 0.5.11 0.5.12-r1: Library for automatic proxy configuration management
 net-libs/libpsl 0.21.5: C library for the Public Suffix List
@@ -16870,7 +16870,7 @@ sec-keys/openpgp-keys-syncthing 20250904: OpenPGP key used to sign Syncthing rel
 sec-keys/openpgp-keys-sysvinit 20220413: OpenPGP keys used by the sysvinit project
 sec-keys/openpgp-keys-tar 20220406: OpenPGP keys used by GNU tar
 sec-keys/openpgp-keys-tarsnap 20260123: OpenPGP key used by app-backup/tarsnap
-sec-keys/openpgp-keys-tcpdump 20210416 20240308 20240901 20260104: OpenPGP keys used to sign tcpdump releases
+sec-keys/openpgp-keys-tcpdump 20210416 20240308 20240901 20260104 20260908: OpenPGP keys used to sign tcpdump releases
 sec-keys/openpgp-keys-teemutoivola 20210426: OpenPGP keys used by Teemu Toivola
 sec-keys/openpgp-keys-tenable 20220718: OpenPGP keys used to sign Tenable Inc. software packages
 sec-keys/openpgp-keys-terminator 20210306: OpenPGP keys used to sign x11-terms/terminator package
@@ -17454,7 +17454,7 @@ sys-apps/s6-linux-init 1.1.3.0-r1 1.2.0.0-r1 1.2.0.1: Generates an init binary f
 sys-apps/s6-linux-utils 2.6.3.0 2.6.4.0 2.6.4.1: Set of tiny linux utilities
 sys-apps/s6-portable-utils 2.3.1.0 2.3.1.1 2.3.1.2: Set of tiny portable unix utilities
 sys-apps/s6-rc 0.5.6.0 0.5.6.0-r1 0.6.0.0 0.6.0.0-r1 0.6.1.1: Service manager for the s6 supervision suite
-sys-apps/sandbox 2.46 2.47 2.48 2.49 9999: sandbox'd LD_PRELOAD hack
+sys-apps/sandbox 2.46 2.47 2.48 2.49 2.51 9999: sandbox'd LD_PRELOAD hack
 sys-apps/sdparm 1.12 1.12-r1: Utility to output and modify parameters on a SCSI device, like hdparm
 sys-apps/secilc 3.8.1 3.9 3.10 3.11 9999: SELinux Common Intermediate Language (CIL) Compiler
 sys-apps/sed 4.10-r1: Super-useful stream editor

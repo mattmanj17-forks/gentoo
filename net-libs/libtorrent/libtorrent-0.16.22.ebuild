@@ -35,6 +35,10 @@ DEPEND="${RDEPEND}
 "
 BDEPEND="virtual/pkgconfig"
 
+PATCHES=(
+	"${FILESDIR}"/${P}-missing_includes.patch # merged
+)
+
 src_prepare() {
 	default
 

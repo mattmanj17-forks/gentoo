@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=no
 GNOME_TARBALL_SUFFIX="gz"
-PYTHON_COMPAT=( python3_{11..14} pypy3_11 )
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit gnome.org meson virtualx xdg distutils-r1
 
@@ -15,11 +15,7 @@ HOMEPAGE="
 	https://pygobject.gnome.org/
 	https://gitlab.gnome.org/GNOME/pygobject/
 "
-COMMIT=0a8b2c56331a31d7f7096faaa1c1c26467b51c15
-SRC_URI+="
-	https://github.com/python/pythoncapi-compat/archive/${COMMIT}.tar.gz -> \
-		${P}_${COMMIT}_pythoncapi-compat.gh.tar.gz
-"
+
 LICENSE="LGPL-2.1+"
 SLOT="3"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x64-macos ~x64-solaris"
@@ -49,22 +45,6 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-PATCHES=(
-	"${FILESDIR}/Skip-test-using-dbus-in-sandbox.patch"
-	"${FILESDIR}/Skip-test-detecting-cycle-among-base-classes-typeerr.patch"
-)
-
-src_unpack() {
-	default
-	unpack "${P}_${COMMIT}_pythoncapi-compat.gh.tar.gz"
-}
-
-src_prepare() {
-	default
-	find  "${S}/subprojects/pythoncapi-compat" -mindepth 1  ! -name meson.build -exec rm -vrf {} + || die
-	mv -v "${WORKDIR}/pythoncapi-compat-${COMMIT}"/* "${S}/subprojects/pythoncapi-compat" || die
-}
-
 python_configure() {
 	local emesonargs=(
 		$(meson_feature cairo pycairo)
@@ -87,11 +67,15 @@ python_test() {
 	local -x GIO_USE_VOLUME_MONITOR="unix" # prevent udisks-related failures in chroots, bug #449484
 	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 	local -x XDG_CACHE_HOME="${T}/${EPYTHON}"
-
-	if [[ ${EPYTHON} == python3.14* ]] ; then
-		# https://gitlab.gnome.org/GNOME/pygobject/-/issues/694
-		local -x PYTEST_ADDOPTS="-k 'not (ref_count or has_two_refs)'"
-	fi
+	local _PYTEST_ADDOPTS=(
+		 # see epytest in python-utils-r1.eclass
+		-vv -ra -l -o filterwarnings=
+		# test_python_calls_sync: timeout
+		--deselect tests/test_gdbus.py::TestGDBusClient::test_python_calls_sync
+		# test_pointer_array_struct_with_guint8: broken on BE but test is dodgy anyway, bug #978759
+		--deselect tests/test_gi.py::TestStructure::test_pointer_array_struct_with_guint8
+	)
+	local -x PYTEST_ADDOPTS="${_PYTEST_ADDOPTS[@]}"
 
 	meson_src_test --timeout-multiplier 3 || die "test for ${EPYTHON}"
 }

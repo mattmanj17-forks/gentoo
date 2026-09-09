@@ -20,7 +20,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="debug lua selinux systemd test tinyxml2 xmlrpc"
+IUSE="debug lua +ncurses selinux systemd test tinyxml2 xmlrpc"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="
 	lua? ( ${LUA_REQUIRED_USE} )
@@ -29,9 +29,9 @@ REQUIRED_USE="
 
 COMMON_DEPEND="
 	~net-libs/libtorrent-${PV}
-	sys-libs/ncurses:0=
 	virtual/zlib:=
 	lua? ( ${LUA_DEPS} )
+	ncurses? ( sys-libs/ncurses:0= )
 	systemd? ( sys-apps/systemd:= )
 	xmlrpc? ( dev-libs/xmlrpc-c:=[libxml2] )
 "
@@ -45,7 +45,8 @@ RDEPEND="${COMMON_DEPEND}
 BDEPEND="virtual/pkgconfig"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-0.16.9-cross_checks.patch
+	"${FILESDIR}"/${PN}-0.16.13-cross_checks.patch
+	"${FILESDIR}"/${P}-missing_includes.patch # merged
 )
 
 DOCS=( doc/rtorrent.rc )
@@ -55,6 +56,10 @@ pkg_setup() {
 }
 
 src_prepare() {
+	if use elibc_musl; then
+		QA_CONFIG_IMPL_DECL_SKIP=( posix_spawn_file_actions_addclosefrom_np )
+	fi
+
 	default
 
 	# use system-json
@@ -65,20 +70,17 @@ src_prepare() {
 	# https://github.com/rakshasa/rtorrent/issues/332
 	cp "${FILESDIR}"/rtorrent.1 "${S}"/doc/ || die
 
-	if [[ ${CHOST} != *-darwin* ]]; then
-		# syslibroot is only for macos, change to sysroot for others
-		sed -i 's/Wl,-syslibroot,/Wl,--sysroot,/' "${S}/scripts/common.m4" || die
-	fi
-
 	eautoreconf
 }
 
 src_configure() {
+	tc-export PKG_CONFIG
 	local myeconfargs=(
 		$(use_enable debug)
 		$(use_with lua)
+		$(usev !ncurses --without-ncurses)
 		$(use_with systemd)
-		$(usev xmlrpc --with-xmlrpc-c=$(tc-getPKG_CONFIG))
+		$(usev xmlrpc --with-xmlrpc-c="${PKG_CONFIG}")
 		$(usev tinyxml2 --with-xmlrpc-tinyxml2)
 	)
 
@@ -108,10 +110,16 @@ src_install() {
 }
 
 pkg_postinst() {
-	einfo "This release could introduce new commands to configure RTorrent."
+	einfo "This release could deprecate or introduce commands to configure RTorrent."
 	einfo "Please read the release notes before restarting:"
 	einfo "https://github.com/rakshasa/rtorrent/releases"
 	einfo ""
 	einfo "For configuration assistance, see:"
 	einfo "https://github.com/rakshasa/rtorrent/wiki"
+
+	if ! use ncurses; then
+		einfo "${PN} was installed without ncurses support."
+		einfo "It can only be launched using:"
+		einfo "rtorrent -o system.daemon.set=true"
+	fi
 }

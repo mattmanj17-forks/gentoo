@@ -1,6 +1,8 @@
 # Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Should be bumped with media-plugins/gst-plugins-libnice
+
 EAPI=8
 
 inherit meson-multilib xdg
@@ -11,16 +13,16 @@ SRC_URI="https://libnice.freedesktop.org/releases/${P}.tar.gz"
 
 LICENSE="|| ( MPL-1.1 LGPL-2.1 )"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm arm64 ~hppa ~loong ppc ppc64 ~riscv ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 IUSE="+gnutls gtk-doc +introspection test +upnp"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-libs/glib-2.54:2[${MULTILIB_USEDEP}]
+	>=dev-libs/glib-2.56:2[${MULTILIB_USEDEP}]
 	introspection? ( >=dev-libs/gobject-introspection-1.82.0-r2:= )
-	gnutls? ( >=net-libs/gnutls-2.12.0:0=[${MULTILIB_USEDEP}] )
-	!gnutls? ( dev-libs/openssl:0=[${MULTILIB_USEDEP}] )
-	upnp? ( net-libs/gupnp-igd:1.6=[${MULTILIB_USEDEP}] )
+	gnutls? ( >=net-libs/gnutls-3.6.0:=[${MULTILIB_USEDEP}] )
+	!gnutls? ( dev-libs/openssl:=[${MULTILIB_USEDEP}] )
+	upnp? ( >=net-libs/gupnp-igd-0.2.5:1.6=[${MULTILIB_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -34,18 +36,18 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0.1.19-remove-graphviz-dependency.patch" # downstream; bugs 877451, 889820
-	"${FILESDIR}/${P}-gupnp-igd-1.6.patch" # downstream; bugs 948374, 953635
-	# upstream git master:
-	"${FILESDIR}/${P}-fix-concurrent-tcp-sending.patch"
-	"${FILESDIR}/${P}-fix-test-new-trickle.patch"
-	"${FILESDIR}/${P}-stop-leaking-StunResolverData.patch"
+	"${FILESDIR}/${PN}-0.1.22-gupnp-igd-1.6.patch" # downstream; bugs 948374, 953635
+	"${FILESDIR}/${PN}-0.1.23-fix-test-pseudotcp.patch" # bug 836632
 )
 
 src_prepare() {
 	default
 
-	# Broken w/ network-sandbox on (bug #847844)
-	sed -i -e '/test-set-port-range/d' tests/meson.build || die
+	# skip tests which break with network-sandbox enabled; bugs 847844
+	sed -i \
+		-e "/test-set-port-range/d" \
+		-e "/test-slow-resolving',/d" \
+		tests/meson.build || die
 }
 
 multilib_src_configure() {

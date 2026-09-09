@@ -38,10 +38,10 @@ RDEPEND="
 		>=dev-lua/lpeg-0.9[${LUA_USEDEP}]
 		>=dev-lua/luasocket-3.0_rc1-r4[${LUA_USEDEP}]
 	')
-	media-libs/libsdl3[opengl]
+	media-libs/libsdl2[opengl,video]
 	media-libs/libpng:=
 	>=media-libs/freetype-2.5.3:2
-	media-libs/sdl3-mixer[midi?]
+	media-libs/sdl2-mixer[midi?]
 	virtual/zlib:=
 	midi? (
 		media-libs/rtmidi
@@ -68,7 +68,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-9999-cmake_lua_detection.patch
+	"${FILESDIR}"/${PN}-0.67-cmake_lua_detection.patch
 )
 
 lua_enable_tests busted
@@ -77,7 +77,6 @@ src_configure() {
 	local mycmakeargs=(
 		-DBUILD_TOOLS=$(usex tools)
 		-DENABLE_UNIT_TESTS=$(usex test)
-		-DFETCH_SDL_MIXER=OFF
 		-DFETCH_SOUNDFONT=OFF
 		-DFETCH_UNICODE_FONT=OFF
 		-DWITH_MIDI_DEVICE=$(usex midi)

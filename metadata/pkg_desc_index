@@ -14028,7 +14028,7 @@ media-radio/qrq 0.3.5-r2: Yet another CW trainer for Linux/Unix
 media-radio/qsstv 9.5.11_pre20250212: Amateur radio SSTV software
 media-radio/svxlink 25.05.1_p20250929-r1 26.05.1: Multi Purpose Voice Services System, including Qtel for EchoLink
 media-radio/tlf 1.4.1-r6: Console-mode amateur radio contest logger
-media-radio/tqsl 2.7.3: ARRL Logbook of the World
+media-radio/tqsl 2.7.3 2.8.6: ARRL Logbook of the World
 media-radio/tucnak 4.72 4.73: Amateur Radio VHF Contest Logbook
 media-radio/unixcw 3.6.1-r2: Collection of programs that fit together to form a morse code tutor program
 media-radio/wsjtx_improved 3.1.0_p260418 3.1.0_p260522 3.2.0_p260818-r1: Weak signal ham radio communication with improvements
@@ -16563,7 +16563,7 @@ sci-ml/sentencepiece 0.2.1: Text tokenizer for Neural Network-based text generat
 sci-ml/seqeval 1.2.2-r4: Python framework for sequence labeling evaluation
 sci-ml/tensorpipe 2025.11.05: provides a tensor-aware channel
 sci-ml/tokenizers 0.22.1 0.22.2 0.23.1: Implementation of today's most used tokenizers
-sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries
+sci-ml/torchdata 0.11.0-r1: A repo for data loading and utilities on PyTorch domain libraries
 sci-ml/torchvision 0.27.0 0.28.0 0.29.0-r2: Datasets, transforms and models to specific to computer vision
 sci-ml/transformers 5.3.0-r1 5.15.1 5.16.1: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
 sci-physics/bullet 3.21 3.22b: Continuous Collision Detection and Physics Library

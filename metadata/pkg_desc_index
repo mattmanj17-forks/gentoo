@@ -10878,7 +10878,7 @@ dev-util/bbe 0.2.2-r1: Sed-like editor for binary files
 dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1 0.35.0-r2 0.36.0 0.36.1 0.36.1-r1: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 dev-util/bcpp 20240917: Indents C/C++ source code
 dev-util/bdelta 0.3.1-r1: Binary Delta - Efficient difference algorithm and format
-dev-util/bear 3.1.6 4.1.5: A tool that generates a compilation database for clang tooling
+dev-util/bear 3.1.6 4.1.5 4.2.2: A tool that generates a compilation database for clang tooling
 dev-util/bindgen 0.72.0 0.72.1: Automatically generate Rust FFI bindings to C and C++ libraries
 dev-util/bingrep 0.11.0-r1: Binary file analysis tool
 dev-util/bloaty 1.1-r1 1.1-r2 9999: A size profiler for binaries
@@ -13143,7 +13143,7 @@ media-gfx/freecad 1.0.2-r2 1.1.1 9999: Qt based Computer Aided Design applicatio
 media-gfx/freepv 0.3.0-r6: Panorama viewer (Quicktime, PangeaVR, GLPanoView formats)
 media-gfx/frogr 1.8.1-r1: flickr applications for GNOME
 media-gfx/geeqie 2.6.1-r1 2.6.1-r2 9999: A lightweight GTK image viewer forked from GQview
-media-gfx/gif2png 2.5.14: Converts images from gif format to png format
+media-gfx/gif2png 2.5.14 3.0.5: Converts images from GIF format to PNG format
 media-gfx/gifsicle 1.95 1.96: Create, manipulate, and optimize GIF images and animations
 media-gfx/gimp 2.10.38-r5 3.2.4 9999: GNU Image Manipulation Program
 media-gfx/gimp-arrow-brushes 20190407 20190407-r1: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
@@ -13228,7 +13228,7 @@ media-gfx/pablodraw 3.3.13_beta-r1 3.3.14_beta: Ansi/Ascii text and RIPscrip vec
 media-gfx/pdf2svg 0.2.3-r2: Convert PDF to SVG files using poppler and cairo
 media-gfx/pencil 0.7.0 0.7.0_p20260127: 2D animation and drawing program based on Qt
 media-gfx/photopc 3.07: Utility to control digital cameras based on Sierra Imaging firmware
-media-gfx/photoqt 5.3 5.4: Simple but powerful Qt-based image viewer
+media-gfx/photoqt 5.4 5.4.1: Simple but powerful Qt-based image viewer
 media-gfx/phototonic 3.1.0 3.2.0: Image viewer and organizer
 media-gfx/pinta 3.0 3.1.2: Pinta is a free, open source program for drawing and image editing
 media-gfx/pixels2pgf 0.1-r1 9999: Convert pixel images (e.g. QRCode) to PGF/Tikz rectangles
@@ -13916,7 +13916,7 @@ media-plugins/obs-source-clone 0.1.5 0.2.3 9999: Plugin for OBS Studio to clone 
 media-plugins/obs-source-dock 0.4.1 0.5.1 9999: Plugin for OBS Studio to add docks
 media-plugins/obs-source-record 0.4.7 9999: Plugin for OBS Studio to make sources available to record via a filter
 media-plugins/obs-vkcapture 1.5.5 9999: OBS Linux Vulkan/OpenGL game capture
-media-plugins/photoqt-extensions 5.3 5.4: Official extensions for PhotoQt
+media-plugins/photoqt-extensions 5.4 5.4.1: Official extensions for PhotoQt
 media-plugins/qmmp-plugin-pack 2.3.0 2.3.1: Set of extra plugins for Qmmp
 media-plugins/rev-plugins 0.8.1: REV LADSPA plugins package, stereo reverb plugin based on the well-known greverb
 media-plugins/swh-lv2 1.0.16-r1: Large collection of LV2 audio plugins/effects
@@ -14832,7 +14832,7 @@ net-dns/hash-slinger 3.5: Various tools to generate DNS records like SSHFP, TLSA
 net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
-net-dns/knot 3.4.10 3.5.4 3.5.5-r2 3.5.6: High-performance authoritative-only DNS server
+net-dns/knot 3.5.5-r2 3.5.6 3.5.8: High-performance authoritative-only DNS server
 net-dns/knot-resolver 5.7.7-r1 5.7.8 6.4.1-r1 6.4.2: Scaleable caching DNS resolver
 net-dns/libidn 1.43 1.44: Internationalized Domain Names (IDN) implementation
 net-dns/libidn2 2.3.8: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
@@ -14846,7 +14846,7 @@ net-dns/pdns 5.1.4: The PowerDNS Daemon
 net-dns/pdns-recursor 5.4.5 5.4.6: The PowerDNS Recursor
 net-dns/pdnsd 1.2.9a-r2: Proxy DNS server with permanent caching
 net-dns/rbldnsd 0.998b-r3 0.998b-r4: DNS server designed to serve blacklist zones
-net-dns/redis-knot 3.5.4 3.5.5 3.5.6: Redis module for Knot DNS
+net-dns/redis-knot 3.5.5 3.5.6 3.5.8: Redis module for Knot DNS
 net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0 2.4.1.1 2.4.1.2: Suite of DNS client programs and libraries for Unix systems

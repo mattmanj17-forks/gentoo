@@ -1696,7 +1696,7 @@ app-dicts/myspell-da 2.6: Danish dictionaries for myspell/hunspell
 app-dicts/myspell-de 2017.01.12-r1: German (AT,CH,DE) dictionaries for myspell/hunspell
 app-dicts/myspell-de_1901 20170622: German (traditional orthography) dictionaries for myspell/hunspell
 app-dicts/myspell-el 0.9: Greek dictionaries for myspell/hunspell
-app-dicts/myspell-en 20250901 20260701-r1: English dictionaries for myspell/hunspell
+app-dicts/myspell-en 20250901 20260701-r1 20260901: English dictionaries for myspell/hunspell
 app-dicts/myspell-eo 1.01: Esperanto dictionaries for myspell/hunspell
 app-dicts/myspell-es 2.6 2.9: Spanish dictionaries for myspell/hunspell
 app-dicts/myspell-et 20030606: Estonian dictionaries for myspell/hunspell
@@ -1785,7 +1785,7 @@ app-doc/eclass-manpages 20260624 20260904 99999999: Collection of Gentoo eclass 
 app-doc/elisp-manual 18.1.03-r1 19.2.4.2-r1 20.2.5-r1 21.2.8-r3 22.2.9-r1 23.4-r1 24.5-r1 25.3-r1 26.3-r1 27.2-r1 28.2-r1 29.4-r1 30.2: The GNU Emacs Lisp Reference Manual
 app-doc/execline-man-pages 2.9.6.1.1 2.9.9.1.1: mdoc port of the HTML documentation for the execline suite
 app-doc/geant-docs 4.11.4: User documentation for Geant4 physics simulation toolkit
-app-doc/gimp-help 2.10.34-r2 3.0.2: GNU Image Manipulation Program help files
+app-doc/gimp-help 2.10.34-r2 3.0.2 3.2.0: GNU Image Manipulation Program help files
 app-doc/gnu-c-intro-ref 0.1 9999: GNU C Language Intro and Reference Manual
 app-doc/gnucash-docs 5.14: Documentation package for GnuCash
 app-doc/info-manual 30.2: Manual for the Info reader in GNU Emacs
@@ -3287,7 +3287,7 @@ app-text/fzy 1.1 9999: Fuzzy text selector (interactive grep) for console
 app-text/gentoo-dtd 20230914-r1 20260615 99999999: Document Type Definition for Gentoo-related XML files
 app-text/ghostscript-gpl 10.06.0 10.06.0-r2: Interpreter for the PostScript language and PDF
 app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before committing them
-app-text/groonga 16.0.0-r2 16.0.1: Embeddable Fulltext Search Engine
+app-text/groonga 16.0.1 16.1.0: Embeddable Fulltext Search Engine
 app-text/groonga-normalizer-mysql 1.1.1-r1: Groonga plugin that provides MySQL compatible normalizers
 app-text/grutatxt 2.200.0: A converter from plain text to HTML and other markup languages
 app-text/gspell 1.14.0-r1 1.14.3 1.14.4: Spell check library for GTK+ applications
@@ -3485,7 +3485,7 @@ app-text/xmlstarlet 1.6.1-r3 1.6.1-r4 1.6.1-r5: A set of tools to transform, que
 app-text/xmlto 0.0.28-r11: Script for converting XML and DocBook documents to a variety of output formats
 app-text/xmltoman 0.6-r1: Simple scripts for converting xml to groff or html
 app-text/xournalpp 1.2.8 1.3.4 9999: Handwriting notetaking software with PDF annotation support
-app-text/xpdf 4.05-r2: PDF viewer and toolkit
+app-text/xpdf 4.05-r2 4.06: PDF viewer and toolkit
 app-text/yamlfmt 0.13.0 0.14.0 0.15.0: An extensible command line tool or library to format yaml files
 app-text/yelp-tools 42.1-r1: Collection of tools for building and converting documentation
 app-text/yodl 4.05.00: Your Own Document Language: a pre-document language and tools to process it
@@ -5990,7 +5990,7 @@ dev-libs/tntnet 3.0: Modular, multithreaded web application server extensible wi
 dev-libs/tomsfastmath 0.13.1-r1: Fast public domain large integer arithmetic library
 dev-libs/totem-pl-parser 3.26.6-r2 3.26.7: Playlist parsing library
 dev-libs/tre 0.8.0_p20210321-r4 0.9.0-r1: Lightweight, robust, and efficient POSIX compliant regexp matching library
-dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 0.26.6 0.26.7 0.26.8 0.26.11 0.26.12 0.26.13 9999: Tree-sitter is a parser generator tool and an incremental parsing library
+dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 0.26.6 0.26.7 0.26.8 0.26.11 0.26.12 0.26.13 0.27.0 9999: Tree-sitter is a parser generator tool and an incremental parsing library
 dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0 0.25.1: Bash grammar for Tree-sitter
 dev-libs/tree-sitter-c 0.23.3 0.23.4 0.23.5 0.24.1 0.24.2: C grammar for Tree-sitter
 dev-libs/tree-sitter-c-sharp 0.23.0 0.23.1 0.23.5: C# grammar for Tree-sitter
@@ -9230,7 +9230,7 @@ dev-python/pygithub 2.9.1 2.10.0: Python library to access the Github API v3
 dev-python/pyglet 2.1.15 2.1.16: Cross-platform windowing and multimedia library for Python
 dev-python/pygments 2.19.2 2.20.0 2.21.0: Pygments is a syntax highlighting package written in Python
 dev-python/pygments-github-lexers 0.0.5-r2: Pygments Github custom lexers
-dev-python/pygobject 3.50.1 3.50.2 3.52.3 3.52.4 3.54.5 3.56.2 3.56.3: Python bindings for GObject Introspection
+dev-python/pygobject 3.50.1 3.50.2 3.56.3 3.58.0: Python bindings for GObject Introspection
 dev-python/pygraphviz 1.14-r2 2.0.1-r1: Python wrapper for the Graphviz Agraph data structure
 dev-python/pygresql 6.2.3: A Python interface for the PostgreSQL database
 dev-python/pyh2o 1-r1: Python API for sci-libs/libh2o
@@ -10969,7 +10969,7 @@ dev-util/devhelp 43.0: An API documentation browser for GNOME
 dev-util/dialog 1.3.20250116-r1 1.3.20250817: Tool to display dialog boxes from a shell
 dev-util/diff-cover 9.6.0: Find diff lines that do not have test coverage
 dev-util/diffball 1.0.1-r2: Delta compression suite for using/generating binary patches
-dev-util/diffoscope 318 323 324 325 327: Will try to get to the bottom of what makes files or directories different
+dev-util/diffoscope 325 327 329: Will try to get to the bottom of what makes files or directories different
 dev-util/diffstat 1.68 1.69: Display a histogram of diff changes
 dev-util/difftastic 0.68.0 0.69.0: A structural diff that understands syntax
 dev-util/diffuse 0.10.0 0.11.0: A graphical tool to compare and merge text files
@@ -11207,7 +11207,7 @@ dev-util/tinlink 1.0.0-r2: Tool to create very small elf binary from pure binary
 dev-util/tkdiff 5.7 6.0: Graphical front end to the diff program
 dev-util/tmake 2.12-r2: Cross platform Makefile tool
 dev-util/trace-cmd 3.3.2 3.3.3 3.4: User-space front-end for Ftrace
-dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6 0.26.8 0.26.11 0.26.12: Command-line tool for creating and testing tree-sitter grammars
+dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6 0.26.8 0.26.11 0.26.12 0.27.0: Command-line tool for creating and testing tree-sitter grammars
 dev-util/treecc 0.3.10-r2 0.3.10-r3: Compiler-compiler tool for aspect-oriented programming
 dev-util/txt2regex 0.9: A Regular Expression wizard that converts human sentences to regexs
 dev-util/ty 0.0.7: An extremely fast Python type checker and language server, written in Rust
@@ -11957,7 +11957,7 @@ games-server/monopd 0.10.4: Server for the GtkAtlantic board game
 games-server/mtavc 0.5-r2: dedicated server for GTA3 multiplayer
 games-server/steamcmd 1.0-r4: This is the command-line version of the Steam client for dedicated servers
 games-simulation/EmptyEpsilon 2022.10.28: A spaceship bridge simulator game
-games-simulation/corsix-th 0.68.0 0.70.0-r2 0.70.0-r4 9999: Open source clone of Theme Hospital
+games-simulation/corsix-th 0.68.0 0.70.0-r2 0.70.0-r4 0.70.1 9999: Open source clone of Theme Hospital
 games-simulation/crashtest 1.1-r3: Educational car crash simulator
 games-simulation/crrcsim 0.9.13-r2: Model-airplane flight simulation program
 games-simulation/flightgear 2024.1.1 9999: Open Source Flight Simulator
@@ -13095,7 +13095,7 @@ media-gfx/asymptote 3.11 3.11-r1 3.12-r2 3.13-r1 3.14: A vector graphics languag
 media-gfx/autopano-sift-C 2.5.1-r2: SIFT algorithm for automatic panorama creation in C
 media-gfx/aview 1.3.0_rc1-r3: ASCII Image Viewer
 media-gfx/blender 4.2.16 4.4.3 4.5.5 4.5.9999 5.0.0 5.0.9999 9999: 3D Creation/Animation/Publishing System
-media-gfx/blender-bin 3.6.23 4.2.16 4.2.20 4.5.5 4.5.9 5.0.0 5.1.1 9999: 3D Creation/Animation/Publishing System
+media-gfx/blender-bin 3.6.23 4.2.16 4.2.20 4.5.5 4.5.9 4.5.12 5.0.0 5.1.1 5.2.1 9999: 3D Creation/Animation/Publishing System
 media-gfx/brscan4 0.4.11.1-r1: Brother scanner driver
 media-gfx/brscan5 1.6.2.0-r1: SANE driver for Brother scanners (brscan5)
 media-gfx/cairosvg 2.9.0 2.9.1: CLI and library to export SVG to PDF, PostScript, and PNG
@@ -13496,7 +13496,7 @@ media-libs/libirman 0.4.5: library for Irman control of Unix software
 media-libs/libjpeg-turbo 3.1.3 3.1.4.1: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysticks and game controllers
 media-libs/libjxl 0.11.2 0.12.0 9999: JPEG XL image format reference implementation
-media-libs/libkate 0.4.1-r4: Codec for karaoke and text encapsulation for Ogg
+media-libs/libkate 0.4.1-r4 0.4.3: Codec for karaoke and text encapsulation for Ogg
 media-libs/libkeyfinder 2.2.8: Musical key detection library for digital audio
 media-libs/liblastfm 1.1.0_pre20250726: Collection of libraries to integrate Last.fm services
 media-libs/libldac 2.0.2.3-r2: LDAC codec library from AOSP
@@ -13786,7 +13786,7 @@ media-plugins/gst-plugins-lame 1.24.13 1.26.11: MP3 encoder plugin for GStreamer
 media-plugins/gst-plugins-ldac 1.24.13 1.26.11: LDAC plugin for GStreamer
 media-plugins/gst-plugins-libav 1.24.13 1.26.11: FFmpeg based gstreamer plugin
 media-plugins/gst-plugins-libde265 1.24.13 1.26.11: H.265 decoder plugin for GStreamer
-media-plugins/gst-plugins-libnice 0.1.22 0.1.23: GStreamer plugin for ICE (RFC 5245) support
+media-plugins/gst-plugins-libnice 0.1.23 0.1.24: GStreamer plugin for ICE (RFC 5245) support
 media-plugins/gst-plugins-libpng 1.24.13 1.26.11: PNG image encoder/decoder plugin for GStreamer
 media-plugins/gst-plugins-libvisual 1.24.13 1.26.11: Visualization elements for GStreamer
 media-plugins/gst-plugins-lv2 1.24.13 1.26.11: Lv2 elements for Gstreamer
@@ -14352,7 +14352,7 @@ media-sound/vlorb 1.2: A high quality Audio CD to audio file encoder
 media-sound/vmpk 0.9.1-r1: Virtual MIDI Piano Keyboard
 media-sound/volumeicon 0.5.1-r2: A lightweight volume control that sits in your systray
 media-sound/volwheel 0.2.9: A volume control trayicon with mouse wheel support
-media-sound/vorbis-tools 1.4.2-r4: Tools for using the Ogg Vorbis sound file format
+media-sound/vorbis-tools 1.4.2-r4 1.4.3: Tools for using the Ogg Vorbis sound file format
 media-sound/vorbisgain 0.37-r5: Calculator of perceived sound level for Ogg Vorbis files
 media-sound/vsound 0.6-r1: A virtual audio loopback cable
 media-sound/wav2json 0.4: Generate waveformjs.org compatible json data out of wav files
@@ -14833,13 +14833,13 @@ net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
 net-dns/knot 3.4.10 3.5.4 3.5.5-r2 3.5.6: High-performance authoritative-only DNS server
-net-dns/knot-resolver 5.7.6 5.7.7-r1 5.7.8 6.3.0 6.4.0-r1 6.4.1-r1 6.4.2: Scaleable caching DNS resolver
+net-dns/knot-resolver 5.7.7-r1 5.7.8 6.4.1-r1 6.4.2: Scaleable caching DNS resolver
 net-dns/libidn 1.43 1.44: Internationalized Domain Names (IDN) implementation
 net-dns/libidn2 2.3.8: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
 net-dns/maradns 3.5.0036: A security-aware DNS server
 net-dns/mdns-repeater 1.11: Multicast DNS repeater
 net-dns/ndu 0.4-r4: DNS serial number incrementer and reverse zone builder
-net-dns/nsd 4.14.3 4.15.0 4.15.1 9999: An authoritative only, high performance, open source name server
+net-dns/nsd 4.14.3 4.15.0 4.15.1 4.15.2 9999: An authoritative only, high performance, open source name server
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0 3.17.3 3.17.4: A framework for managing DNS information
 net-dns/pdns 5.1.4: The PowerDNS Daemon
@@ -15089,7 +15089,7 @@ net-libs/libnetfilter_log 1.0.2-r1: Interface to packets that have been logged b
 net-libs/libnetfilter_queue 1.0.5 1.0.5-r1: API to packets that have been queued by the kernel packet filter
 net-libs/libnfnetlink 1.0.2: The low-level library for netfilter related kernel/userspace communication
 net-libs/libnftnl 1.2.8 1.2.9 1.3.0 1.3.1 1.3.2 9999: Netlink API to the in-kernel nf_tables subsystem
-net-libs/libnice 0.1.22-r1 0.1.23-r1: Implementation of the Interactive Connectivity Establishment standard (ICE)
+net-libs/libnice 0.1.23-r1 0.1.24: Implementation of the Interactive Connectivity Establishment standard (ICE)
 net-libs/libnids 1.26-r2: An implementation of an E-component of Network Intrusion Detection System
 net-libs/libnma 1.10.6-r2: NetworkManager GUI library
 net-libs/libnpupnp 6.2.3 6.3.0: A C++ base UPnP library, derived from Portable UPnP, a.k.a libupnp
@@ -15124,7 +15124,7 @@ net-libs/libssh2 1.11.1-r2 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
 net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 0.5.1 9999: library to implement TLSRPT
-net-libs/libtorrent 0.15.7 0.16.11 0.16.13 0.16.14 0.16.15 0.16.19 9999: BitTorrent library written in C++ for *nix
+net-libs/libtorrent 0.15.7 0.16.19 0.16.22 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
 net-libs/libupnp 1.14.31 1.18.5 22.0.6: An Portable Open Source UPnP Development Kit
@@ -15615,7 +15615,7 @@ net-news/yydecode 0.2.10-r3 0.2.10-r4: A decoder for yENC format, popular on Use
 net-nntp/leafnode 1.11.11-r2 1.12.0-r1: A USENET software package designed for small sites
 net-nntp/newspost 2.1.1-r3: usenet binary autoposter for unix
 net-nntp/nzbget 25.0 25.4 26.2 26.3: A command-line based binary newsgrabber supporting .nzb files
-net-nntp/sabnzbd 4.5.5 5.0.3 5.0.4 5.1.2: Binary newsgrabber with web-interface
+net-nntp/sabnzbd 5.1.2: Binary newsgrabber with web-interface
 net-nntp/slrn 1.0.3-r2: A s-lang based newsreader
 net-nntp/suck 4.3.5: Grab news from a remote NNTP server and feed them to another
 net-nntp/tin 2.6.4 2.6.5: A threaded NNTP and spool based UseNet newsreader
@@ -15644,7 +15644,7 @@ net-p2p/ncdc 1.25: Lightweight direct connect client with a friendly ncurses int
 net-p2p/nicotine+ 3.3.7 3.3.10: Graphical client for the Soulseek peer to peer network written in Python
 net-p2p/qbittorrent 5.1.2-r1 5.1.4 5.2.0 9999: BitTorrent client in C++ and Qt
 net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable file synchronization tool
-net-p2p/rtorrent 0.15.7 0.16.11 0.16.13 0.16.14 0.16.15 0.16.19 9999: BitTorrent Client using libtorrent
+net-p2p/rtorrent 0.15.7 0.16.19 0.16.22 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.14.0a_p0 0.14.2a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 2.0.10 2.0.16 2.1.2 2.1.3: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
@@ -15689,7 +15689,7 @@ net-print/pnm2ppa 1.13-r2: Print driver for Hp Deskjet 710, 712, 720, 722, 820, 
 net-print/poster 20060221-r4: Small utility for making a poster from an EPS file or a one-page PS document
 net-print/splix 2.0.1 2.0.2: A set of CUPS printer drivers for SPL (Samsung Printer Language) printers
 net-print/sshlpr 1-r2: ssh-lpr backend for cups -- print to remote systems over ssh
-net-proxy/3proxy 0.9.5 0.9.7: Really tiny cross-platform proxy servers set
+net-proxy/3proxy 0.9.5 0.9.7 0.9.9.0: Really tiny cross-platform proxy servers set
 net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, page counters and web bugs
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3 1.4.4: A free socks4,5 and msproxy implementation

@@ -15770,7 +15770,7 @@ net-vpn/tinc 1.0.36-r1 1.0.37 1.1_pre18-r2: tinc is an easy to configure VPN imp
 net-vpn/tor 0.4.9.11 0.4.9.11-r1 0.4.9.12 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.22 1.0.1: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
-net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
+net-vpn/vpnc-scripts 20220510 20250727 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
 net-vpn/vpncloud 2.3.0-r2: High performance peer-to-peer mesh VPN
 net-vpn/vpncwatch 1.8.1-r1: Keepalive daemon for vpnc on Linux systems
 net-vpn/vtun 3.0.4-r3 3.0.4-r4: Create tunnels over TCP/IP networks with shaping, encryption, and compression

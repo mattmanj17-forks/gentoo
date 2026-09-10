@@ -14226,7 +14226,7 @@ media-sound/munt-mt32emu-alsadrv 2.6.1: ALSA MIDI driver for emulating the Rolan
 media-sound/mup 6.9-r1: Program for printing music scores
 media-sound/muse 0.9.2_p20161002-r1: Multiple Streaming Engine, an icecast source streamer
 media-sound/musepack-tools 495 495-r1: Musepack SV8 libraries and utilities
-media-sound/musescore 4.7.4-r1 9999: WYSIWYG Music Score Typesetter
+media-sound/musescore 4.7.4-r1 4.7.5 9999: WYSIWYG Music Score Typesetter
 media-sound/music-file-organizer 1.0.3-r1: Organizes audio files into directories based on metadata tags
 media-sound/musique 1.12.1_p20240628: Qt music player
 media-sound/ncmpc 0.51 0.52: Ncurses client for the Music Player Daemon (MPD)
@@ -15300,7 +15300,7 @@ net-misc/casync 2_p20250922: Content-Addressable Data Synchronization Tool
 net-misc/cbqinit 0.7.3-r3: Sets up class-based queue traffic control (QoS) with iproute2
 net-misc/cgminer 4.10.0-r1: Bitcoin CPU/GPU/FPGA/ASIC miner in C
 net-misc/chrome-remote-desktop 118.0.5993.9 148.0.7778.58: access remote computers via Chrome!
-net-misc/chrony 4.8-r1 9999: NTP client and server programs
+net-misc/chrony 4.8-r1 4.9 9999: NTP client and server programs
 net-misc/clockspeed 0.62-r9: Simple Network Time Protocol (NTP) client
 net-misc/clusterssh 4.16 4.18 9999: Concurrent Multi-Server Terminal Access
 net-misc/cmst 2023.03.14-r2: Qt GUI for Connman with system tray icon

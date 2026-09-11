@@ -9942,7 +9942,7 @@ dev-qt/qt5compat 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module containing 
 dev-qt/qtbase 6.11.1 6.11.2-r2 6.11.9999 6.12.9999 6.9999: Cross-platform application development framework
 dev-qt/qtcharts 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Chart component library for the Qt6 framework
 dev-qt/qtconnectivity 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
-dev-qt/qtdeclarative 6.11.1-r1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt Declarative (Quick 2)
+dev-qt/qtdeclarative 6.11.1-r1 6.11.2-r1 6.11.9999 6.12.9999 6.9999: Qt Declarative (Quick 2)
 dev-qt/qtgraphs 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Graphs component library for the Qt6 framework
 dev-qt/qthttpserver 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
 dev-qt/qtimageformats 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system

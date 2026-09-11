@@ -17479,7 +17479,7 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 3.4.1-r1 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 259.4-r2 260.1-r2 260.2-r1 260.4 261-r1 261.1 261.2 262_rc1 262_rc2 9999: System and service manager for Linux
+sys-apps/systemd 259.4-r2 260.1-r2 260.2-r1 260.4 261-r1 261.1 261.2 261.3 262_rc1 262_rc2 9999: System and service manager for Linux
 sys-apps/systemd-initctl 2 4: initctl Compatibility Daemon
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
 sys-apps/systemd-utils 260.1-r1: Utilities split out from systemd for OpenRC users
@@ -18974,7 +18974,7 @@ x11-misc/xsri 2.1.0_p17_p12 2.1.0_p17_p12-r1: The xsri wallpaper setter from Red
 x11-misc/xss-lock 0.3.0_p20140302-r2: Use external locker as X screen saver
 x11-misc/xssstate 1.1: A simple tool to retrieve the X screensaver state
 x11-misc/xteddy 2.2: A cuddly teddy bear (or other image) for your X desktop
-x11-misc/xtermcontrol 3.10: xtermcontrol enables dynamic control of XFree86 xterm properties
+x11-misc/xtermcontrol 3.10 3.11: xtermcontrol enables dynamic control of XFree86 xterm properties
 x11-misc/xtitle 1.0.4: Set window title and icon name for an X11 terminal window
 x11-misc/xtrace 1.4.0: X11 protocol trace utility
 x11-misc/xtrlock 2.13-r1: A simplistic screen locking program for X

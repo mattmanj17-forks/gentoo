@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,8 +15,8 @@ KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 RDEPEND="
 	>=dev-libs/glib-2.80.0:2
 	dev-libs/libgee:0.8=[introspection]
-	>=gui-libs/gtk-4.18.0[introspection]
-	>=gui-libs/libadwaita-1.7[introspection,vala]
+	>=gui-libs/gtk-4.19.3:4[introspection]
+	>=gui-libs/libadwaita-1.8[introspection,vala]
 	dev-libs/json-glib
 	>=dev-libs/qqwing-1.3.4:=
 	x11-libs/gdk-pixbuf:2[introspection]

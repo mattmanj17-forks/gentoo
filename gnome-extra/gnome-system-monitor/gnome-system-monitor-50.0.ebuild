@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,17 +9,17 @@ HOMEPAGE="https://apps.gnome.org/SystemMonitor/"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm arm64 ~loong ~ppc ~ppc64 ~riscv x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
 
 IUSE="systemd"
 
 RDEPEND="
-	>=dev-cpp/glibmm-2.68:2.68
-	>=dev-libs/glib-2.56.0:2
-	>=gui-libs/gtk-4.12.0:4
-	>=dev-cpp/gtkmm-4.0.0:4.0
+	>=dev-cpp/glibmm-2.80:2.68
+	>=dev-libs/glib-2.84.0:2
+	>=gui-libs/gtk-4.17.5:4
+	>=dev-cpp/gtkmm-4.17.5:4.0
 	>=gnome-base/libgtop-2.41.2:2=
-	>=gui-libs/libadwaita-1.6_alpha:1
+	>=gui-libs/libadwaita-1.8_alpha:1
 	>=gnome-base/librsvg-2.46:2
 	systemd? ( >=sys-apps/systemd-44:0= )
 "
@@ -33,10 +33,6 @@ BDEPEND="
 	virtual/pkgconfig
 	>=sys-auth/polkit-0.114
 " # polkit needed at buildtime for ITS rules of policy files, first available in 0.114
-
-PATCHES=(
-	"${FILESDIR}"/0001-remove-outdated-libxml2-build-dep.patch
-)
 
 src_configure() {
 	local emesonargs=(

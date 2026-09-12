@@ -1,15 +1,16 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+
 inherit gnome.org meson xdg
 
 DESCRIPTION="Collection of developer-oriented UPnP tools"
-HOMEPAGE="https://wiki.gnome.org/Projects/GUPnP"
+HOMEPAGE="https://gitlab.gnome.org/GNOME/gupnp-tools"
 
 LICENSE="GPL-2+ LGPL-2+"
 SLOT="0"
-KEYWORDS="amd64 ~ppc x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 
 RDEPEND="
 	>=net-libs/gssdp-1.6.2:1.6=
@@ -30,7 +31,7 @@ BDEPEND="
 src_prepare() {
 	default
 
-	# This makes sense for upstream but not for us downstream, bug #907384.
+	# This makes sense for upstream but not for downstreams, bug #907384.
 	sed -i -e '/-Werror=deprecated-declarations/d' meson.build || die
 }
 

@@ -3104,7 +3104,7 @@ app-portage/fetchcommandwrapper 0.8.4-r5 1.0.0 1.0.0-r1: Wrapper integrating ari
 app-portage/flaggie 0.99.8: A smart CLI mangler for package.* files
 app-portage/g-cpan 0.18.0-r2 9999: Autogenerate and install ebuilds for CPAN modules
 app-portage/g-octave 0.4.1-r8: A tool that generates and installs ebuilds for Octave-Forge
-app-portage/gemato 20.12 20.13 9999: Stand-alone Manifest generation & verification tool
+app-portage/gemato 20.12 20.13 20.14: Stand-alone Manifest generation & verification tool
 app-portage/genlop 0.30.12 9999: Nice emerge.log parser
 app-portage/gentle 1.0.2: Gentoo Lazy Entry - a metadata.xml generator
 app-portage/gentoolkit 0.7.6 0.8.0 0.8.1 9999: Collection of administration scripts for Gentoo
@@ -3960,7 +3960,7 @@ dev-cpp/libmcpp 2.7.2_p5-r2: A portable C++ preprocessor
 dev-cpp/libxmlpp 2.42.3 5.0.4 5.4.0: C++ wrapper for the libxml2 XML parser library
 dev-cpp/lucene++ 3.0.9-r2: C++ port of Lucene library, a high-performance, full-featured text search engine
 dev-cpp/magic_enum 0.9.6 0.9.7 0.9.8: Static reflection for enums in header-only C++
-dev-cpp/mm-common 1.0.6 1.0.7 1.0.8: Build infrastructure and utilities for GNOME C++ bindings
+dev-cpp/mm-common 1.0.8: Build infrastructure and utilities for GNOME C++ bindings
 dev-cpp/ms-gsl 4.0.0 4.1.0 4.2.1 9999: Guideline Support Library implementation by Microsoft
 dev-cpp/msgpack-cxx 6.1.1 8.0.0: MessagePack for C++
 dev-cpp/muParser 2.3.4-r1 2.3.5: Library for parsing mathematical expressions
@@ -3968,7 +3968,7 @@ dev-cpp/mvfst 2024.11.04.00-r1 2025.04.14.00 2025.04.14.00-r1: An implementation
 dev-cpp/nlohmann_json 3.12.0-r1: JSON for Modern C++
 dev-cpp/notcurses 3.0.5-r1 3.0.8 3.0.8-r1: Blingful TUIs and character graphics
 dev-cpp/opentelemetry-cpp 1.6.0-r3 1.24.0 1.25.0: The OpenTelemetry C++ Client
-dev-cpp/pangomm 2.46.4 2.50.2 2.56.1 2.56.2: C++ interface for pango
+dev-cpp/pangomm 2.46.4 2.46.5 2.56.2: C++ interface for pango
 dev-cpp/pcg-cpp 0.98.1_p20220408: Family of better random number generators
 dev-cpp/picojson 1.3.0: Header-file-only, JSON parser serializer in C++
 dev-cpp/popl 1.2.0-r1: Header-only C++ program options parser library
@@ -9778,7 +9778,7 @@ dev-python/traitlets 5.15.1 5.16.1: A configuration system for Python applicatio
 dev-python/trakit 0.2.5 0.3.0: Guess additional information from titles in media tracks
 dev-python/transitions 0.9.3: A lightweight, object-oriented state machine implementation in Python
 dev-python/translate-toolkit 3.19.17 3.19.18 3.19.19 3.20.0: Toolkit to convert between many translation formats
-dev-python/tree-sitter 0.25.2-r1 0.26.0: Python bindings to the Tree-sitter parsing library
+dev-python/tree-sitter 0.25.2-r1 0.26.0 0.26.0_p20260816: Python bindings to the Tree-sitter parsing library
 dev-python/treq 25.5.0 26.7.0: A requests-like API built on top of twisted.web's Agent
 dev-python/trimesh 5.0.0 5.1.0: Python library for loading and using triangular meshes
 dev-python/trio 0.33.0 0.34.0: Python library for async concurrency and I/O
@@ -13203,7 +13203,7 @@ media-gfx/libimagequant 2.18.0 4.3.4: Palette quantization library that powers p
 media-gfx/librecad 2.2.2_alpha1_pre20250509 2.2.2_alpha1_pre20260215 9999: Generic 2D CAD program
 media-gfx/libredwg 0.13.3 0.13.4 0.14: C library to handle DWG files
 media-gfx/llgal 0.13.19-r2: Command-line static web gallery generator
-media-gfx/loupe 48.1-r2 49.2: View images
+media-gfx/loupe 49.2 50.0: View images
 media-gfx/lximage-qt 2.4.0: Qt Image Viewer
 media-gfx/maim 5.8.1 5.8.1-r1 5.8.2: Commandline tool to take screenshots of the desktop
 media-gfx/mandelbulber 2.33: Tool to render 3D fractals
@@ -15140,7 +15140,7 @@ net-libs/lwip 2.2.1_p5 9999: Small independent implementation of the TCP/IP prot
 net-libs/mbedtls 2.28.10 3.6.4 3.6.5: Cryptographic library for embedded systems
 net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-libs/miniupnpc 2.3.3-r1: UPnP client library and a simple UPnP client
-net-libs/msgraph 0.2.3-r1 0.3.3 0.3.4: GLib-based library for accessing online serive APIs using MS Graph protocol
+net-libs/msgraph 0.3.4 0.3.5: GLib-based library for accessing online serive APIs using MS Graph protocol
 net-libs/nDPI 4.8 4.14 9999: Open Source Deep Packet Inspection Software Toolkit
 net-libs/neon 0.34.0: HTTP and WebDAV client library
 net-libs/net6 1.3.14-r2: Network access framework for IPv4/IPv6 written in C++
@@ -18699,7 +18699,7 @@ x11-libs/libxklavier 5.4-r1: A library for the X Keyboard Extension (high-level 
 x11-libs/libxshmfence 1.3.3: Shared memory fences using futexes
 x11-libs/motif 2.3.8-r6 2.5.2 2.5.2-r1: The Motif user interface component toolkit
 x11-libs/neXtaw 0.15.1-r5: Athena Widgets with N*XTSTEP appearance
-x11-libs/pango 1.52.2 1.54.0 1.56.3 1.56.4 1.56.4-r1 1.56.4-r2 1.57.0 1.57.1: Internationalized text layout and rendering library
+x11-libs/pango 1.57.1 1.58.2: Internationalized text layout and rendering library
 x11-libs/pixman 0.46.4 9999: Low-level pixel manipulation routines
 x11-libs/qscintilla 2.14.1-r2: Qt port of Neil Hodgson's Scintilla C++ editor control
 x11-libs/qtermwidget 2.4.0 9999: Qt terminal emulator widget

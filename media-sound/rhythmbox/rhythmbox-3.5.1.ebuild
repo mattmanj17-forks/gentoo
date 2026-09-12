@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+
 PYTHON_COMPAT=( python3_{12..14} )
 PYTHON_REQ_USE="xml(+)"
 
@@ -103,7 +104,7 @@ src_prepare() {
 	default
 
 	# Disable plugins whose dependencies do not exist in ::gentoo
-	sed '/rbzeitgeist/d' -i ${S}/meson.build || die
+	sed '/rbzeitgeist/d' -i "${S}"/meson.build || die
 }
 
 src_configure() {

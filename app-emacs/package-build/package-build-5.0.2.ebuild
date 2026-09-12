@@ -14,7 +14,6 @@ if [[ "${PV}" == *9999* ]] ; then
 else
 	SRC_URI="https://github.com/melpa/${PN}/archive/v${PV}.tar.gz
 		-> ${P}.gh.tar.gz"
-
 	KEYWORDS="~amd64 ~x86"
 fi
 
@@ -22,7 +21,7 @@ LICENSE="GPL-3+"
 SLOT="0"
 
 RDEPEND="
-	>=app-emacs/compat-31.0.0.1
+	>=app-emacs/compat-31.0
 "
 BDEPEND="
 	${RDEPEND}

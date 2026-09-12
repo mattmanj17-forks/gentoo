@@ -18,13 +18,13 @@ S="${WORKDIR}/rclone-v${PV}"
 
 LICENSE="Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~riscv ~x86"
 
 RDEPEND="
 	sys-fs/fuse:3=
 "
 BDEPEND="
-	>=dev-lang/go-1.25.0
+	>=dev-lang/go-1.26.0
 "
 
 CHECKREQS_DISK_BUILD="2500M"

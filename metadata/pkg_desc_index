@@ -11444,7 +11444,7 @@ games-arcade/funnyboat 1.5_p11-r3: Side scrolling shooter game starring a steamb
 games-arcade/gav 0.9.0-r1: GPL Arcade Volleyball
 games-arcade/gish-demo 1.6-r1: Play as an amorphous ball of tar that rolls and squishes around
 games-arcade/gnake 0.94b-r3: ncurses-based Nibbles clone
-games-arcade/gnome-nibbles 4.2.2 4.4.2: Nibbles clone for GNOME
+games-arcade/gnome-nibbles 4.4.2: Nibbles clone for GNOME
 games-arcade/gnome-robots 40.0: Avoid the robots and make them crash into each other
 games-arcade/gnujump 1.0.8-r2: Xjump clone with added features
 games-arcade/grande-KXL 0.6-r3: ZANAC type game
@@ -14132,7 +14132,7 @@ media-sound/glurp 0.12.3: Glurp is a GTK2 based graphical client for the Music P
 media-sound/gmorgan 0.79-r4: Opensource software rhythm station
 media-sound/gmtp 1.3.11-r4: Simple MTP client for MP3 players
 media-sound/gnomad 2.9.6-r3: GTK+ music manager for the Portable Digital Entertainment (PDE) protocol
-media-sound/gnome-music 48.2-r1 49.1: Music management for Gnome
+media-sound/gnome-music 49.1 50.0: Music management for Gnome
 media-sound/gnome-sound-recorder 42.0: A simple, modern sound recorder for GNOME
 media-sound/gnump3d 3.0-r6: Streaming server for MP3, OGG vorbis and other streamable files
 media-sound/gogglesmm 1.2.5 1.2.5-r1: Fast and light music player
@@ -15347,7 +15347,7 @@ net-misc/geomyidae 0.96: A daemon to serve the gopher protocol
 net-misc/gerbera 2.6.1 3.2.1 9999: UPnP Media Server
 net-misc/getdate 1.2-r3: Network Date/Time Query and Set Local Date/Time Utility
 net-misc/gnome-connections 49.0 50.0: A remote desktop client for the GNOME desktop environment
-net-misc/gnome-remote-desktop 48.2 49.3 49.3-r1: Remote desktop server which allows you to connect to your machine remotely
+net-misc/gnome-remote-desktop 49.3-r1: Remote desktop server which allows you to connect to your machine remotely
 net-misc/gns3-gui 2.2.56 2.2.59: Graphical Network Simulator
 net-misc/gns3-server 2.2.56 2.2.59: GNS3 server to asynchronously manage emulators
 net-misc/gofish 1.2-r2: Gofish gopher server
@@ -16136,7 +16136,7 @@ sci-geosciences/geocode-glib 3.26.4-r201: GLib helper library for geocoding serv
 sci-geosciences/geopy 2.4.1-r1: Python client for several popular geocoding web services
 sci-geosciences/gmaptool 08220-r1: Program for splitting and merging maps in Garmin format
 sci-geosciences/gmt 6.4.0-r1: Powerful map generator
-sci-geosciences/gnome-maps 48.7 49.4 49.5: A map application for GNOME
+sci-geosciences/gnome-maps 49.5 50.5: A map application for GNOME
 sci-geosciences/gpsbabel 1.9.0-r1 9999: GPS waypoints, tracks and routes converter
 sci-geosciences/gpscorrelate 2.0-r1 2.3: Tool for adjusting EXIF tags of your photos with a recorded GPS trace
 sci-geosciences/gpsd 3.26.1-r1 3.27.5 9999: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
@@ -17307,7 +17307,7 @@ sys-apps/gawk 5.3.2 5.4.1 5.4.1-r1 5.4.1a: GNU awk pattern-matching language
 sys-apps/gentoo-functions 0.19 1.7.4 1.7.5 1.7.6 1.7.7 9999: Base functions required by all Gentoo systems
 sys-apps/gentoo-systemd-integration 9-r2 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
-sys-apps/gnome-disk-utility 45.1-r1 46.1-r1: Disk Utility for GNOME using udisks
+sys-apps/gnome-disk-utility 46.1-r1: Disk Utility for GNOME using udisks
 sys-apps/goawk 1.29.1 1.30.0 1.30.1 1.31.0: POSIX-compliant AWK interpreter written in Go, with CSV support
 sys-apps/gptfdisk 1.0.10-r1: GPT partition table manipulator for Linux
 sys-apps/gradm 3.1.201903191516: Administrative interface for the grsecurity Role Based Access Control system

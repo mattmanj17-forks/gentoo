@@ -3086,7 +3086,7 @@ app-pda/usbmuxd 1.1.1_p20231011 1.1.1_p20240915: USB multiplex daemon for use wi
 app-portage/cfg-update 1.8.9-r2 1.8.9-r3 1.8.11 1.11.0: Easy to use GUI & CLI alternative for etc-update
 app-portage/command-not-found 0.0.7-r1: Command-not-found handler for Gentoo
 app-portage/conf-update 1.0.3-r1: conf-update is a ncurses-based config management utility
-app-portage/cpuid2cpuflags 17: Tool to guess CPU_FLAGS_* flags for the host
+app-portage/cpuid2cpuflags 17 18: Tool to guess CPU_FLAGS_* flags for the host
 app-portage/diffmask 0.3.3-r5: A utility to maintain package.unmask entries up-to-date with masks
 app-portage/eix 0.36.9: Search and query ebuilds
 app-portage/elicense 1.0.2-r2 1.0.2-r3: Tool to find installed packages in Gentoo with non-accepted license(s)
@@ -3128,7 +3128,6 @@ app-portage/pkg-testing-tools 0.2.6 0.2.7 0.2.8 9999: Packages testing tools for
 app-portage/portage-utils 0.97 0.97.1 9999: Small and fast Portage helper tools written in C
 app-portage/porticron 0.7.2: cron script to sync portage and send update mails to root
 app-portage/portpeek 3.2.9: A helper program for maintaining the package.keyword and package.unmask files
-app-portage/pram 16: Tool to ease merging Pull Requests and git patches
 app-portage/prefix-toolkit 11-r1 12: Utilities for users of Gentoo Prefix
 app-portage/pycargoebuild 0.15.1 0.15.2 0.15.3 0.16.0: A generator for Rust/Cargo ebuilds written in Python
 app-portage/recover-broken-vdb 1.0.0-r2 9999: Check Portage's VDB for internal inconsistency on ELF metadata
@@ -11259,7 +11258,7 @@ dev-vcs/cvsutils 0.2.6: A small bundle of utilities to work with CVS repositorie
 dev-vcs/darcs 2.16.5-r6 2.18.5: a distributed, interactive, smart revision control system
 dev-vcs/easygit 1.7.5.2-r1: Easy GIT (eg), a frontend for git designed for former cvs and svn users
 dev-vcs/fossil 2.21 2.22 2.24-r1 2.26 2.27: Simple, high-reliability, source control management, and more
-dev-vcs/gagit 3 4: Gentoo AGit workflow tool
+dev-vcs/gagit 4: Gentoo AGit workflow tool
 dev-vcs/git 2.52.0 2.53.0 2.54.0 2.55.0 9999 9999-r1 9999-r2 9999-r3: Stupid content tracker: distributed VCS designed for speed and efficiency
 dev-vcs/git-absorb 0.7.0 0.8.0 0.9.0: Automatically absorb staged changes into git current branch
 dev-vcs/git-annex 10.20230802 10.20260601: manage files with git, without checking their contents into git
@@ -11299,6 +11298,7 @@ dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2-r1 7.2.4 9999: Scala
 dev-vcs/mergiraf 0.18.0 0.19.0 0.19.1: Syntax-aware git merge driver
 dev-vcs/mr 1.20180726: Multiple Repository management tool
 dev-vcs/pkgcruft-git 0.0.5-r2 9999: QA support for verifying git commits via pkgcruft
+dev-vcs/pram 16: Tool to ease merging Pull Requests and git patches
 dev-vcs/pre-commit 4.5.1: A framework for managing and maintaining multi-language Git pre-commit hooks
 dev-vcs/pwclient 2.6.2: The command-line client for the patchwork patch tracking tool
 dev-vcs/python-gitlab 5.6.0: Python command line interface to gitlab API
@@ -17934,7 +17934,7 @@ sys-fs/vhba 20260313: Virtual (SCSI) Host Bus Adapter kernel module for the CDEm
 sys-fs/vzquota 3.1: OpenVZ VPS disk quota utility
 sys-fs/xcp 0.24.8-r1: A 'cp' alternative with user-friendly feedback and performance optimisations
 sys-fs/xfsdump 3.1.12 3.2.0 3.3.0: XFS dump/restore utilities
-sys-fs/xfsprogs 6.17.0-r1 6.18.0 6.19.0 7.0.1: XFS filesystem utilities
+sys-fs/xfsprogs 6.17.0-r1 6.18.0 6.19.0 7.0.1 7.1.1: XFS filesystem utilities
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem

@@ -16,7 +16,7 @@ SLOT="0"
 
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 
-IUSE="cdr daap doc dbus keyring ipod libnotify lirc mtp +python test +udev upnp-av"
+IUSE="cdr daap dbus gtk-doc keyring ipod libnotify lirc mtp +python test +udev upnp-av"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="
 	ipod? ( udev )
@@ -86,7 +86,7 @@ RDEPEND="${DEPEND}
 	)
 "
 BDEPEND="
-	doc? ( dev-util/gi-docgen )
+	gtk-doc? ( dev-util/gi-docgen )
 	dev-util/itstool
 	virtual/pkgconfig
 	test? ( dev-libs/check )
@@ -124,7 +124,7 @@ src_configure() {
 		-Dsample-plugins=false
 
 		-Dhelp=true
-		$(meson_use doc apidoc)
+		$(meson_use gtk-doc apidoc)
 		$(meson_feature test tests)
 	)
 	meson_src_configure
@@ -144,4 +144,12 @@ pkg_postinst() {
 pkg_postrm() {
 	xdg_pkg_postrm
 	gnome2_schemas_update
+}
+
+src_install() {
+	meson_src_install
+	if use gtk-doc; then
+		mkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
+		mv "${ED}"/usr/share/doc/rhythmbox "${ED}"/usr/share/gtk-doc/html/ || die
+	fi
 }

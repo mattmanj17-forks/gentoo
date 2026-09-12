@@ -34,7 +34,7 @@ DEPEND="
 	>=media-libs/gst-plugins-base-1.4.0:1.0[introspection]
 	>=x11-libs/gtk+-3.20.0:3[X,introspection]
 	dev-libs/json-glib
-	>=dev-libs/libpeas-0.7.3:0=[gtk]
+	>=dev-libs/libpeas-1.38.1:0=[gtk]
 	>=net-libs/libsoup-3.0.7:3.0
 	>=dev-libs/libxml2-2.7.8:2=
 	x11-libs/pango
@@ -52,7 +52,7 @@ DEPEND="
 	python? (
 		${PYTHON_DEPS}
 		$(python_gen_cond_dep '
-			>=dev-python/pygobject-3.0:3[${PYTHON_USEDEP}]
+			>=dev-python/pygobject-3.52:3[${PYTHON_USEDEP}]
 		')
 	)
 	udev? (
@@ -71,7 +71,7 @@ RDEPEND="${DEPEND}
 	media-plugins/gst-plugins-taglib:1.0
 	x11-themes/adwaita-icon-theme
 	python? (
-		>=dev-libs/libpeas-0.7.3:0=[python,${PYTHON_SINGLE_USEDEP}]
+		>=dev-libs/libpeas-1.38.1:0=[python,${PYTHON_SINGLE_USEDEP}]
 		net-libs/libsoup:3.0[introspection]
 		x11-libs/gdk-pixbuf:2[introspection]
 		x11-libs/gtk+:3[introspection]

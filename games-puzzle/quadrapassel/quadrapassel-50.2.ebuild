@@ -1,29 +1,32 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
+
 inherit gnome.org gnome2-utils meson vala xdg
 
 DESCRIPTION="Fit falling blocks together"
-HOMEPAGE="https://wiki.gnome.org/Apps/Quadrapassel https://gitlab.gnome.org/GNOME/quadrapassel"
+HOMEPAGE="https://gitlab.gnome.org/GNOME/quadrapassel"
 
-LICENSE="GPL-2+ CC-BY-SA-3.0"
+LICENSE="GPL-3+ CC-BY-SA-3.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 ~loong ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
 
 RDEPEND="
-	>=media-libs/clutter-1:1.0
-	>=media-libs/clutter-gtk-0.91.6:1.0
-	media-libs/cogl:1.0=
-	>=media-libs/gsound-1.0.2
-	>=x11-libs/gtk+-3.12.0:3
-	>=dev-libs/libmanette-0.2.0
+	>=gui-libs/gtk-4.4:4
+	>=gui-libs/libadwaita-1.8:1
+	dev-libs/libgnome-games-support:2=
+	>=dev-libs/libmanette-0.2.10
 	x11-libs/pango
 	>=gnome-base/librsvg-2.32.0:2
+
+	media-libs/libsndfile
+	media-libs/openal
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-libs/appstream-glib
+	dev-util/blueprint-compiler
 	dev-util/itstool
 	>=sys-devel/gettext-0.19.8
 	virtual/pkgconfig
@@ -34,8 +37,8 @@ BDEPEND="
 "
 
 src_prepare() {
-	xdg_src_prepare
-	vala_src_prepare
+	default
+	vala_setup
 }
 
 pkg_postinst() {

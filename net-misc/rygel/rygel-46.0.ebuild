@@ -3,14 +3,16 @@
 
 EAPI=8
 
-inherit gnome.org meson systemd vala xdg
+PYTHON_COMPAT=( python3_{12..14} )
+
+inherit gnome.org meson python-any-r1 systemd vala xdg
 
 DESCRIPTION="Rygel is an open source UPnP/DLNA MediaServer"
 HOMEPAGE="https://gnome.pages.gitlab.gnome.org/rygel/"
 
 LICENSE="LGPL-2.1+ CC-BY-SA-3.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm64 x86"
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE="gtk gtk-doc +introspection +sqlite tracker test transcode"
 RESTRICT="!test? ( test )"
 
@@ -49,31 +51,33 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
+	>=dev-build/meson-1.8.0
 	$(vala_depend)
 	app-text/docbook-xml-dtd:4.5
+	dev-python/docutils
 	>=sys-devel/gettext-0.19.7
 	virtual/pkgconfig
+	${PYTHON_DEPS}
+	$(python_gen_any_dep 'dev-python/pyyaml[${PYTHON_USEDEP}]')
 "
 # Maintainer only
 #   app-text/docbook-xsl-stylesheets
 #	>=dev-lang/vala-0.36
-#   dev-libs/libxslt
+
+python_check_deps() {
+	python_has_version -b \
+		"dev-python/pyyaml[${PYTHON_USEDEP}]"
+}
 
 src_prepare() {
 	vala_setup
 	default
-	# Disable test triggering call to gst-plugins-scanner which causes
-	# sandbox issues when plugins such as clutter are installed
-	#sed -e 's/return rygel_playbin_renderer_test_main (argv, argc);/return 0;/' \
-	#	-i tests/rygel-playbin-renderer-test.c || die
-
-	#default
 }
 
 src_configure() {
 	local emesonargs=(
 		$(meson_use gtk-doc api-docs)
-		-Dman_pages=true
+		-Dman-pages=true
 		-Dsystemd-user-units-dir=$(systemd_get_userunitdir)
 		-Dplugins=gst-launch$(use sqlite && echo ",media-export")$(use tracker && echo ",localsearch")
 		-Dengines=gstreamer

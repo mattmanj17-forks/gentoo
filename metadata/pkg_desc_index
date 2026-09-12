@@ -7235,6 +7235,7 @@ dev-perl/Lingua-Stem-It 0.20.0-r2: Porter's stemming algorithm for Italian
 dev-perl/Lingua-Stem-Ru 0.40.0-r1: Porter's stemming algorithm for Russian (KOI8-R only)
 dev-perl/Lingua-Stem-Snowball-Da 1.10.0-r2: Porters stemming algorithm for Denmark
 dev-perl/Lingua-Translit 0.290.0: Transliterates text between writing systems
+dev-perl/Linux-DVB 1.30.0: Interface to (some parts of) the Linux DVB API
 dev-perl/Linux-DesktopFiles 0.250.0-r1 0.260.0: Perl module to get and parse the Linux .desktop files
 dev-perl/Linux-Distribution 0.230.0-r1: Perl extension to detect on which Linux distribution we are running
 dev-perl/Linux-Inotify2 2.300.0: scalable directory/file change notification
@@ -14391,7 +14392,7 @@ media-tv/tvbrowser-bin 4.2.7: Themeable and easy to use TV Guide - written in Ja
 media-tv/tvheadend 4.3_p20240618-r1 4.3_p20260516 9999: Tvheadend is a TV streaming server and digital video recorder
 media-tv/v4l-dvb-saa716x 0.0.1_p20170225-r6: driver for saa716x based dvb cards like TT S2-6400 or Skystar 2 eXpress HD
 media-tv/w_scan 20170107: Scan DVB-C/DVB-T/DVB-S channels
-media-tv/xmltv 1.0.0-r1: Set of utilities to manage TV listings stored in the XMLTV format
+media-tv/xmltv 1.0.0-r1 1.4.0-r1: Set of utilities to manage TV listings stored in the XMLTV format
 media-video/acidrip 0.14-r4: A gtk-perl mplayer/mencoder frontend for ripping DVDs
 media-video/aegisub 3.4.2-r1 3.4.2-r3 9999: Advanced subtitle editor
 media-video/alevt 1.8.2-r1: Teletext viewer for X11

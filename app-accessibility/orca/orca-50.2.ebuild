@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+
 PYTHON_COMPAT=( python3_{12..14} )
 
-inherit gnome2 meson python-single-r1
+inherit gnome2 meson python-single-r1 virtualx
 
 DESCRIPTION="Extensible screen reader that provides access to the desktop"
 HOMEPAGE="https://orca.gnome.org/"
@@ -64,7 +65,7 @@ src_configure() {
 
 src_test() {
 	# test_structural_navigator needs more time
-	meson_src_test --timeout-multiplier=10
+	virtx meson_src_test --timeout-multiplier=10
 }
 
 src_install() {

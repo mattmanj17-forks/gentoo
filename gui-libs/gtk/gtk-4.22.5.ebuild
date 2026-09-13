@@ -204,22 +204,35 @@ src_test() {
 
 	addwrite /dev/dri
 
+	export LIBGL_ALWAYS_SOFTWARE=true
+
 	# Note that skipping gsk-compare entirely means we do run *far*
 	# fewer tests, but a reliable testsuite for us is more important
 	# than absolute-maximum coverage if we can't trust the results and
 	# dismiss any failures as "probably font related" and so on.
+	# Upstream said those are going to give slightly different results
+	# depending on the renderers and the software rendering stack and are
+	# meant to be used in CI in a well defined environment and not really
+	# suitable for distros
+	# https://gitlab.gnome.org/GNOME/gtk/-/issues/6383
 	if use X; then
 		einfo "Running tests under X"
 		GSETTINGS_SCHEMA_DIR="${S}/gtk" virtx meson_src_test --timeout-multiplier=130 \
 			--setup=x11 \
+			--no-suite=docs \
 			--no-suite=failing \
 			--no-suite=x11_failing \
 			--no-suite=flaky \
 			--no-suite=headless \
 			--no-suite=gsk-compare \
 			--no-suite=gsk-compare-broadway \
+			--no-suite=gsk-compare-gl \
+			--no-suite=gsk-compare-cairo \
+			--no-suite=gsk-compare-ngl \
+			--no-suite=gsk-compare-vulkan \
 			--no-suite=needs-udmabuf \
-			--no-suite=pango
+			--no-suite=pango \
+			--no-suite=svg
 	fi
 
 	if use wayland; then
@@ -233,13 +246,20 @@ src_test() {
 
 		GSETTINGS_SCHEMA_DIR="${S}/gtk" meson_src_test --timeout-multiplier=130 \
 			--setup=wayland \
+			--no-suite=docs \
 			--no-suite=failing \
 			--no-suite=wayland_failing \
+			--no-suite=wayland_gles_failing \
 			--no-suite=flaky \
 			--no-suite=headless \
 			--no-suite=gsk-compare \
 			--no-suite=gsk-compare-broadway \
-			--no-suite=needs-udmabuf
+			--no-suite=gsk-compare-gl \
+			--no-suite=gsk-compare-cairo \
+			--no-suite=gsk-compare-ngl \
+			--no-suite=gsk-compare-vulkan \
+			--no-suite=needs-udmabuf \
+			--no-suite=svg
 
 		exit_code=$?
 		kill ${compositor}

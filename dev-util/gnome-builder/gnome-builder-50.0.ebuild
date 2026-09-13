@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+
 LLVM_COMPAT=( {18..20} )
 PYTHON_COMPAT=( python3_{12..14} )
 DISABLE_AUTOFORMATTING=1
@@ -257,6 +258,10 @@ src_install() {
 		# Additionally default docompress exclusion of /html/ already ensures they aren't compressed,
 		# thus linkable as-is.
 		rmdir "${ED}"/usr/share/doc/gnome-builder/ || die
+	fi
+	if use gtk-doc; then
+		mkdir -p "${ED}"/usr/share/gtk-doc/html/ || diemkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
+		mv "${ED}"/usr/share/doc/libide "${ED}"/usr/share/gtk-doc/html/ || die
 	fi
 	readme.gentoo_create_doc
 }

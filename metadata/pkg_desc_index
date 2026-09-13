@@ -12148,7 +12148,7 @@ gnome-extra/gnome-shell-frippery 48.0 49.1: Unofficial extension pack providing 
 gnome-extra/gnome-software 49.4: Gnome install & update software
 gnome-extra/gnome-system-monitor 49.1 50.0: The Gnome System Monitor
 gnome-extra/gnome-tweaks 46.1-r1 49.0: Customize advanced GNOME options
-gnome-extra/gnome-user-docs 49.9 50.4: GNOME end user documentation
+gnome-extra/gnome-user-docs 49.9 50.4 50.5: GNOME end user documentation
 gnome-extra/gnome-user-share 47.2 48.2 48.3: Personal file sharing for the GNOME desktop
 gnome-extra/gnome-weather 48.0 49.0 50.0: A weather application for GNOME
 gnome-extra/gucharmap 16.0.1 17.0.1 17.0.2: Unicode character map viewer and library

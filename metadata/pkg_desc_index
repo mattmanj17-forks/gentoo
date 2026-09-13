@@ -5666,7 +5666,7 @@ dev-libs/libdazzle 3.44.0: Experimental new features for GTK+ and GLib
 dev-libs/libdbh 5.0.22: A small library to create and manage 64-bit disk based hash tables
 dev-libs/libdbusmenu 16.04.0-r4: Library to pass menu structure across DBus
 dev-libs/libdbusmenu-lxqt 0.4.0: LXQt DBusMenu Implementation
-dev-libs/libdex 0.10.1 1.0.0: Dex provides Future-based programming for GLib-based applications
+dev-libs/libdex 1.0.0 1.2.0: Dex provides Future-based programming for GLib-based applications
 dev-libs/libdispatch 5.8 6.1.1: Library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
 dev-libs/libdivsufsort 2.0.1-r2 2.0.1-r3: Suffix-sorting library (for BWT)
@@ -12281,8 +12281,8 @@ gui-libs/libwpe 1.16.2 1.16.3: Platform-agnostic interfaces for WPE WebKit
 gui-libs/neatvnc 0.8.1 0.9.4 1.0.0 9999: Liberally licensed VNC server library with a clean interface
 gui-libs/qt-color-widgets 3.0.0: Qt (C++) widgets to manage color inputs
 gui-libs/tepl 6.8.0: GtkSourceView-based text editors and IDE helper library
-gui-libs/vte 0.82.3 0.82.4: Library providing a virtual terminal emulator widget
-gui-libs/vte-common 0.82.3 0.82.4: Library providing a virtual terminal emulator widget
+gui-libs/vte 0.82.4 0.84.1: Library providing a virtual terminal emulator widget
+gui-libs/vte-common 0.82.4 0.84.1: Library providing a virtual terminal emulator widget
 gui-libs/wayfire-plugins-extra 0.10.0 0.11.2 9999: extra plugins for wayfire
 gui-libs/wf-config 0.10.0 0.11.0 9999: library for managing wayfire configuration files
 gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 0.20.0 0.20.1 0.20.2 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
@@ -18710,7 +18710,7 @@ x11-libs/qwt 6.3.0-r1: 2D plotting library for Qt
 x11-libs/spread-sheet-widget 0.8 0.10: GNU Spread Sheet Widget
 x11-libs/startup-notification 0.12-r2: Application startup notification and feedback library
 x11-libs/tslib 1.23-r1: Touchscreen Access Library
-x11-libs/vte 0.82.3 0.82.4: Library providing a virtual terminal emulator widget
+x11-libs/vte 0.82.4 0.84.1: Library providing a virtual terminal emulator widget
 x11-libs/wxGTK 3.2.8.1-r2: GTK version of wxWidgets, a cross-platform C++ GUI toolkit
 x11-libs/xapp 3.2.2 3.2.3: Cross-desktop libraries and common resources
 x11-libs/xbae 4.60.4-r3: Motif-based widget to display a grid of cells as a spreadsheet

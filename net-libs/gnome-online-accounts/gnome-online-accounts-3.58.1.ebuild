@@ -12,7 +12,7 @@ LICENSE="LGPL-2+"
 SLOT="0/1"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 
-IUSE="debug doc gnome +introspection kerberos ms365 +vala"
+IUSE="debug gnome gtk-doc +introspection kerberos ms365 +vala"
 REQUIRED_USE="vala? ( introspection )"
 
 # libsoup used in goaoauthprovider
@@ -48,7 +48,7 @@ DEPEND="${RDEPEND}
 
 	gnome-base/gnome-common
 "
-BDEPEND="doc? ( dev-util/gi-docgen )"
+BDEPEND="gtk-doc? ( dev-util/gi-docgen )"
 
 src_prepare() {
 	default
@@ -66,7 +66,7 @@ src_configure() {
 		$(meson_use kerberos)
 		-Downcloud=true
 		-Dwebdav=true
-		$(meson_use doc documentation)
+		$(meson_use gtk-doc documentation)
 		$(meson_use ms365 ms_graph)
 		$(meson_use introspection)
 		-Dman=true
@@ -77,7 +77,8 @@ src_configure() {
 
 src_install() {
 	meson_src_install
-	if use doc; then
-		mv "${ED}"/usr/share/doc/${PN} "${ED}"/usr/share/doc/${PF} || die
+	if use gtk-doc; then
+		mkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
+		mv "${ED}"/usr/share/doc/${PN} "${ED}"/usr/share/gtk-doc/html/ || die
 	fi
 }
